@@ -54,7 +54,7 @@ const Footer = () => {
 
             <div class="flex items-center space-x-6">
               <a
-                href="https://github.com"
+                href="https://github.com/eveningwater/github-issue-search/"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="flex items-center space-x-1 text-sm text-gray-500 hover:text-gray-800 transition-colors duration-200"
