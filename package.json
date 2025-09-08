@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "release": "pnpm build && gh-pages -d github-issue-search"
   },
   "dependencies": {
     "@types/three": "^0.158.0",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.8.0",
+    "gh-pages": "^6.3.0",
     "terser": "^5.44.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.0",
