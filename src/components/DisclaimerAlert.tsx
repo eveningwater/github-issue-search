@@ -1,8 +1,7 @@
-import { createSignal, createEffect, Show } from 'solid-js'
+import { createSignal, Show } from 'solid-js'
 import { AlertTriangle, X, Shield } from 'lucide-solid'
 
 const DisclaimerAlert = () => {
-  // 检查localStorage，如果没有记录过就显示
   const hasSeenDisclaimer = typeof window !== 'undefined' ? localStorage.getItem('github-issue-search-disclaimer-seen') : null
   const [showAlert, setShowAlert] = createSignal(hasSeenDisclaimer !== 'true')
   const [dontShowAgain, setDontShowAgain] = createSignal(false)
@@ -11,14 +10,11 @@ const DisclaimerAlert = () => {
     e?.preventDefault()
     e?.stopPropagation()
     
-    console.log('DisclaimerAlert: handleClose called, dontShowAgain:', dontShowAgain())
     
     if (dontShowAgain()) {
       localStorage.setItem('github-issue-search-disclaimer-seen', 'true')
-      console.log('DisclaimerAlert: localStorage set to true')
     }
     
-    console.log('DisclaimerAlert: Setting showAlert to false')
     setShowAlert(false)
   }
 
@@ -32,10 +28,6 @@ const DisclaimerAlert = () => {
     setDontShowAgain((e.target as HTMLInputElement).checked)
   }
 
-  // 监听状态变化
-  createEffect(() => {
-    console.log('DisclaimerAlert: showAlert changed to', showAlert())
-  })
   
   return (
     <Show when={showAlert()}>

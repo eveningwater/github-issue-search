@@ -1,7 +1,8 @@
 import { createSignal, Show } from 'solid-js'
-import { Github, Settings, Check, X } from 'lucide-solid'
+import { Github, Check, X } from 'lucide-solid'
+import ewMessage from 'ew-message'
 
-interface GitHubConfigFormProps {
+export interface GitHubConfigFormProps {
   onConfig: (clientId: string, clientSecret: string) => void
   onCancel: () => void
 }
@@ -16,7 +17,7 @@ const GitHubConfigForm = (props: GitHubConfigFormProps) => {
     e.preventDefault()
     
     if (!clientId().trim() || !clientSecret().trim()) {
-      alert('请填写完整的 GitHub OAuth 配置信息')
+      ewMessage.warning('请填写完整的 GitHub OAuth 配置信息')
       return
     }
 
@@ -24,13 +25,13 @@ const GitHubConfigForm = (props: GitHubConfigFormProps) => {
     
     // 简单验证格式
     if (!clientId().match(/^[a-zA-Z0-9_]+$/)) {
-      alert('Client ID 格式不正确')
+      ewMessage.warning('Client ID 格式不正确')
       setIsValidating(false)
       return
     }
 
     if (!clientSecret().match(/^[a-zA-Z0-9_]+$/)) {
-      alert('Client Secret 格式不正确')
+      ewMessage.warning('Client Secret 格式不正确')
       setIsValidating(false)
       return
     }

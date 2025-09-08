@@ -1,5 +1,5 @@
 import { createSignal, createEffect, Show } from 'solid-js'
-import { CheckCircle, AlertCircle, Info } from 'lucide-solid'
+import { CheckCircle } from 'lucide-solid'
 import { useAuth } from '../hooks/useAuth'
 
 const AuthStatus = () => {

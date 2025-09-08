@@ -1,4 +1,4 @@
-import { GitHubIssue, SearchResponse, SearchParams } from '../types'
+import { SearchResponse, SearchParams } from '../types'
 import { githubAuth } from './githubAuth'
 
 const GITHUB_API_BASE = 'https://api.github.com'

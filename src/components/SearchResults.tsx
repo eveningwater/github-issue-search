@@ -1,7 +1,7 @@
 import { createMemo, Show } from 'solid-js'
 import { SearchState } from '../types'
 import IssueCard from './IssueCard'
-import { AlertCircle, Loader2, RefreshCw, Search } from 'lucide-solid'
+import { AlertCircle, Loader2, Search } from 'lucide-solid'
 
 interface SearchResultsProps {
   state: SearchState

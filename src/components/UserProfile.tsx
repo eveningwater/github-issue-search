@@ -1,5 +1,5 @@
 import { createSignal, Show } from 'solid-js'
-import { User, LogOut, Settings, Github, Star, Users, Calendar } from 'lucide-solid'
+import { LogOut, Github, Calendar } from 'lucide-solid'
 import { GitHubUser } from '../types'
 
 interface UserProfileProps {

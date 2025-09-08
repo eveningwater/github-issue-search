@@ -1,6 +1,6 @@
 import { createSignal, createEffect } from 'solid-js'
 import { githubAuth } from '../services/githubAuth'
-import { AuthState, GitHubUser } from '../types'
+import { AuthState } from '../types'
 
 export const useAuth = () => {
   const [state, setState] = createSignal<AuthState>({

@@ -24,6 +24,9 @@ importers:
       '@types/node':
         specifier: ^20.8.0
         version: 20.19.13
+      ew-message:
+        specifier: 0.1.8-beta.3
+        version: 0.1.8-beta.3
       gh-pages:
         specifier: ^6.3.0
         version: 6.3.0
@@ -517,6 +520,9 @@ packages:
   escape-string-regexp@1.0.5:
     resolution: {integrity: sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==}
     engines: {node: '>=0.8.0'}
+
+  ew-message@0.1.8-beta.3:
+    resolution: {integrity: sha512-/K4DWJgbp3gLZtudwH5Fl6mYsaArv85ExPt1Bi6ZnhMp/ZVITOofazRHXKQKZQJD715cnnDf5x6g8/MsB61KVQ==}
 
   fast-glob@3.3.3:
     resolution: {integrity: sha512-7MptL8U0cqcFdzIzwOTHoilX9x5BrNqye7Z/LuC7kCMRio1EMSyqRK3BEAUD7sXRq4iT4AzTVuZdhgQ2TCvYLg==}
@@ -1251,6 +1257,8 @@ snapshots:
   escalade@3.2.0: {}
 
   escape-string-regexp@1.0.5: {}
+
+  ew-message@0.1.8-beta.3: {}
 
   fast-glob@3.3.3:
     dependencies:

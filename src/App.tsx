@@ -10,8 +10,8 @@ import { useSearch } from './hooks/useSearch'
 import { useAuth } from './hooks/useAuth'
 
 const App = () => {
-  const { state, search, loadMore, clearResults } = useSearch()
-  const { handleCallback, configureGitHub, isGitHubConfigured } = useAuth()
+  const { state, search, loadMore } = useSearch()
+  const { handleCallback } = useAuth()
 
   onMount(() => {
     // 处理OAuth回调

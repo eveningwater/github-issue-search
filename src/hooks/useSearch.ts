@@ -1,4 +1,4 @@
-import { createSignal, createEffect } from 'solid-js'
+import { createSignal } from 'solid-js'
 import { githubAPI } from '../services/githubApi'
 import { SearchState, SearchParams, GitHubIssue } from '../types'
 

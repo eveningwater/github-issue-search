@@ -1,4 +1,4 @@
-import { createEffect, onCleanup, onMount } from 'solid-js'
+import { onCleanup, onMount } from 'solid-js'
 import * as THREE from 'three'
 
 const ThreeBackground = () => {
