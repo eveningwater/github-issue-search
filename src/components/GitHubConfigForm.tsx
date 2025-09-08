@@ -67,7 +67,6 @@ const GitHubConfigForm = (props: GitHubConfigFormProps) => {
               onInput={(e) => setClientId(e.currentTarget.value)}
               placeholder="输入您的 GitHub Client ID"
               class="w-full px-4 py-3 bg-white border-2 border-gray-200 rounded-xl text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-orange-500/20 focus:border-orange-500 hover:border-gray-300 transition-all duration-300 input-shadow"
-              required
             />
           </div>
 
@@ -82,7 +81,6 @@ const GitHubConfigForm = (props: GitHubConfigFormProps) => {
                 onInput={(e) => setClientSecret(e.currentTarget.value)}
                 placeholder="输入您的 GitHub Client Secret"
                 class="w-full px-4 py-3 pr-12 bg-white border-2 border-gray-200 rounded-xl text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-orange-500/20 focus:border-orange-500 hover:border-gray-300 transition-all duration-300 input-shadow"
-                required
               />
               <button
                 type="button"
